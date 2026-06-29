@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Privacy Policy for Kasa Keyboard.">
+  <title>Kasa Keyboard — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0d0e10;
+      --bg-soft: #121418;
+      --panel: #181a1f;
+      --panel-strong: #1e2127;
+      --text: #f3f1eb;
+      --muted: #aaa8a2;
+      --line: #33363d;
+      --accent: #d9a441;
+      --accent-soft: rgba(217, 164, 65, 0.14);
+      --shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 280px;
+      background:
+        radial-gradient(circle at 14% 0%, rgba(217, 164, 65, 0.09), transparent 30rem),
+        radial-gradient(circle at 92% 18%, rgba(111, 119, 133, 0.08), transparent 26rem),
+        var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: #efbf64;
+    }
+
+    .shell {
+      width: min(100% - 32px, 920px);
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(24px, 5vw, 46px);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: linear-gradient(145deg, rgba(32, 35, 41, 0.98), rgba(20, 22, 26, 0.98));
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      right: -72px;
+      top: -80px;
+      border: 1px solid rgba(217, 164, 65, 0.28);
+      border-radius: 50%;
+      box-shadow: 0 0 0 28px rgba(217, 164, 65, 0.035);
+      pointer-events: none;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border: 1px solid rgba(217, 164, 65, 0.7);
+      border-radius: 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: -0.05em;
+    }
+
+    .brand-name {
+      font-size: 0.86rem;
+      font-weight: 760;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 700px;
+      margin: 0;
+      font-size: clamp(2.15rem, 7vw, 4.4rem);
+      line-height: 1.04;
+      letter-spacing: -0.045em;
+    }
+
+    .hero-copy {
+      max-width: 660px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.5vw, 1.12rem);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .meta strong {
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .language-card {
+      position: sticky;
+      z-index: 10;
+      top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 20px 0;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(18, 20, 24, 0.92);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(14px);
+    }
+
+    .language-label {
+      margin-left: 8px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 650;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 6px;
+    }
+
+    .tab {
+      min-height: 42px;
+      padding: 0 15px;
+      border: 1px solid transparent;
+      border-radius: 11px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 720;
+      cursor: pointer;
+    }
+
+    .tab:hover {
+      color: var(--text);
+      background: var(--panel-strong);
+    }
+
+    .tab[aria-selected="true"] {
+      border-color: rgba(217, 164, 65, 0.5);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .tab:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(217, 164, 65, 0.45);
+      outline-offset: 3px;
+    }
+
+    .primary-note {
+      margin: 0 0 20px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--accent);
+      border-radius: 4px 12px 12px 4px;
+      background: var(--accent-soft);
+      color: #dedbd3;
+      font-size: 0.92rem;
+    }
+
+    .policy {
+      display: grid;
+      gap: 14px;
+    }
+
+    .policy[hidden] {
+      display: none;
+    }
+
+    .section {
+      padding: clamp(20px, 4vw, 30px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(150deg, rgba(27, 29, 35, 0.96), rgba(21, 23, 27, 0.96));
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    .section h2 {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      margin: 0 0 12px;
+      font-size: clamp(1.15rem, 3vw, 1.42rem);
+      line-height: 1.28;
+      letter-spacing: -0.015em;
+    }
+
+    .number {
+      flex: 0 0 auto;
+      color: var(--accent);
+      font-size: 0.77em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .section p {
+      margin: 0;
+      color: #d2d0ca;
+    }
+
+    .section p + p,
+    .section ul + p,
+    .section p + ul {
+      margin-top: 12px;
+    }
+
+    .section ul {
+      margin: 12px 0 0;
+      padding-left: 1.25rem;
+      color: #d2d0ca;
+    }
+
+    .section li + li {
+      margin-top: 6px;
+    }
+
+    .section strong {
+      color: var(--text);
+    }
+
+    footer {
+      padding: 30px 12px 0;
+      color: #817f79;
+      text-align: center;
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 20px, 920px);
+        padding-top: 10px;
+      }
+
+      .hero {
+        border-radius: 18px;
+      }
+
+      .language-card {
+        top: 6px;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .language-label {
+        margin: 0 4px;
+      }
+
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .tab {
+        padding: 0 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    @media print {
+      :root {
+        --bg: #fff;
+        --text: #111;
+        --muted: #444;
+        --line: #bbb;
+      }
+
+      body,
+      .hero,
+      .section {
+        color: #111;
+        background: #fff;
+        box-shadow: none;
+      }
+
+      .language-card {
+        display: none;
+      }
+
+      .section p,
+      .section ul,
+      .primary-note {
+        color: #222;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span class="brand-name">Kasa Keyboard</span>
+      </div>
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Your keyboard.<br>Your privacy.</h1>
+      <p class="hero-copy">This policy explains how Kasa Keyboard handles keyboard input, clipboard history, Secure Text, GIF searches, local settings, and device permissions.</p>
+      <div class="meta">
+        <span><strong>Controller:</strong> Emre Doğan</span>
+        <span><strong>Effective:</strong> June 2026</span>
+      </div>
+    </header>
+
+    <nav class="language-card" aria-label="Policy language">
+      <span class="language-label">Language / Dil / Sprache</span>
+      <div class="tabs" role="tablist" aria-label="Choose a language">
+        <button class="tab" id="tab-en" type="button" role="tab" aria-selected="true" aria-controls="panel-en" data-language="en">English</button>
+        <button class="tab" id="tab-tr" type="button" role="tab" aria-selected="false" aria-controls="panel-tr" data-language="tr">Türkçe</button>
+        <button class="tab" id="tab-de" type="button" role="tab" aria-selected="false" aria-controls="panel-de" data-language="de">Deutsch</button>
+      </div>
+    </nav>
+
+    <p class="primary-note">English is the primary version of this Privacy Policy. If a translation differs from the English text, the English version prevails.</p>
+
+    <article class="policy" id="panel-en" role="tabpanel" aria-labelledby="tab-en" lang="en">
+      <section class="section">
+        <h2><span class="number">01</span>Introduction</h2>
+        <p>This Privacy Policy applies to <strong>Kasa Keyboard</strong>, developed and controlled by Emre Doğan. It describes what information the app processes, where that processing occurs, and the choices available to you.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">02</span>Privacy-First Approach</h2>
+        <p>Kasa Keyboard is designed to perform its core keyboard functions on your device. It has no account system, cloud sync, analytics SDK, telemetry SDK, crash-reporting SDK, advertising SDK, user-tracking SDK, or app-generated user identifier. Network access is limited to the GIF feature and user-initiated external actions described below.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">03</span>Keyboard Input and Typed Text</h2>
+        <p>Kasa Keyboard does not store or transmit normal keyboard input. Typed characters are delivered to the app or field in which you are typing.</p>
+        <p>Limited text surrounding the cursor may be processed temporarily on your device for local functions such as cursor movement, capitalization, and email or domain suggestions. This text is not saved as typing history and is not sent to Kasa Keyboard servers or third parties. Local typing assistance is disabled in password-sensitive fields and fields that request no personalized learning.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">04</span>Clipboard History</h2>
+        <p>When clipboard history is available, Kasa Keyboard can observe text copied to the Android clipboard while its input-method service is active. Clipboard history is stored locally in encrypted form using Android Keystore-backed AES-GCM encryption. It is not uploaded by Kasa Keyboard.</p>
+        <p>Clipboard items may be pinned, deleted, or removed automatically according to the cleanup duration you select. Pinned items are not removed by automatic cleanup. Sensitive-looking items may be visually masked and stored, or you can choose to skip storage of detected sensitive items. Visual masking does not mean the underlying saved value is removed.</p>
+        <p>When you choose to paste an item, its text is supplied to the active app as requested.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">05</span>Secure Text Vault</h2>
+        <p>Secure Text Vault records are stored locally and encrypted using Android Keystore-backed AES-GCM encryption. Kasa Keyboard does not upload these records.</p>
+        <p>You can add, edit, delete, and paste Secure Text records. Pasting a record supplies the selected value to the active app. Decrypted records may be held temporarily in memory while the vault is open and are cleared from the visible keyboard state when the vault locks, closes, the service ends, or a value is pasted.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">06</span>Local Settings and Preferences</h2>
+        <p>Theme, language, haptic, sound, keyboard size, typing-assistance, clipboard, screen-protection, and similar preferences are stored locally in the app’s private storage. Kasa Keyboard does not transmit these settings to GIPHY or to a Kasa Keyboard server.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">07</span>GIF Search and Internet Access</h2>
+        <p>The GIF feature uses GIPHY. When you submit a GIF search, <strong>your GIF search query is sent to GIPHY</strong>. Trending requests, GIF previews, and selected GIFs are also loaded from GIPHY. GIPHY may receive ordinary network information, such as your IP address and request metadata, under its own privacy practices.</p>
+        <p>Kasa Keyboard does not send normal keyboard input, clipboard history, Secure Text records, or app settings to GIPHY. Text entered specifically in the GIF search interface is handled as a GIF query, not as normal host-app input.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">08</span>GIF Search History, Favorites and Caching</h2>
+        <p>Recent GIF search terms and favorite GIF identifiers or URLs may be stored locally so those features remain available. You can remove recent searches and favorites from the app.</p>
+        <p>GIF results may be cached temporarily in memory or in app cache storage. Selected GIF send files are subject to opportunistic cache cleanup, and Android or the image-loading library may also manage cached files. Kasa Keyboard does not promise deletion at an exact minute because cache lifetime can depend on app use and system behavior.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">09</span>Permissions Used by the App</h2>
+        <ul>
+          <li><strong>INTERNET:</strong> used for GIPHY search, trending GIFs, preview loading, and selected GIF download.</li>
+          <li><strong>VIBRATE:</strong> used to provide optional haptic feedback for key presses and settings previews.</li>
+          <li><strong>Input method service access:</strong> Android binds to Kasa Keyboard through the system-protected input-method service so the keyboard can enter text in the active field.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">10</span>Optional Device Authentication</h2>
+        <p>Device authentication for Secure Text is optional. If you enable it, Kasa Keyboard uses Android device authentication and an authentication-bound Android Keystore key. A successful unlock remains valid for a limited session of approximately 120 seconds. If you do not enable this option, Secure Text remains encrypted but does not require device authentication each time it is opened.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">11</span>Screen Capture Protection</h2>
+        <p>Kasa Keyboard protects its app and keyboard windows from screenshots and screen recording by default using Android’s secure-window protection. You may temporarily allow screen capture for a duration you select. Screen capture is then protected again when that temporary period ends.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">12</span>Data Sharing and Third Parties</h2>
+        <p>Kasa Keyboard does not sell personal data and does not contain analytics, telemetry, advertising, crash-reporting, or user-tracking SDKs.</p>
+        <p>GIPHY receives GIF search queries and requests needed to load GIF content. The active app receives characters, clipboard items, Secure Text values, or GIFs only when you choose to enter, paste, or send them. Once content is provided to another app, that app’s privacy practices apply.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">13</span>External Links and User-Initiated Actions</h2>
+        <p>Feedback email and Play Store actions open an external email app, service, browser, or Google Play only after you select the relevant action. These external services may process information according to their own policies. Kasa Keyboard does not automatically send your keyboard content through these actions; you decide what to submit.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">14</span>Backups and Device Transfer</h2>
+        <p>Kasa Keyboard disables Android app backup and excludes app preferences and app-owned files from cloud backup and device transfer. The app does not provide cloud sync or an account-based restore service.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">15</span>Data Retention and Deletion</h2>
+        <p>Local settings remain until changed or app data is removed. Clipboard items remain until deleted, automatically cleaned up, or app data is removed; pinned items remain until manually unpinned or deleted. Secure Text records remain until you delete them or remove app data. GIF search history and favorites remain until removed or app data is removed.</p>
+        <p>Clearing Kasa Keyboard’s app data or uninstalling the app removes app-owned local data. Information already pasted, entered, emailed, or sent to another app is controlled by the receiving app or service.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">16</span>User Control</h2>
+        <p>You can manage clipboard cleanup, pin or delete clipboard items, skip detected sensitive clipboard items, remove GIF searches and favorites, add or delete Secure Text records, enable or disable Secure Text device authentication, change typing assistance, control haptic feedback, and manage temporary screen-capture access through the app’s settings.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">17</span>Changes to This Policy</h2>
+        <p>This policy may be updated when Kasa Keyboard’s features, legal requirements, or third-party services change. The effective date shown at the top of this page will be updated when a revised policy is published.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">18</span>Contact</h2>
+        <p>For privacy questions or requests concerning Kasa Keyboard, contact Emre Doğan at <a href="mailto:kasa.passvault@gmail.com">kasa.passvault@gmail.com</a>.</p>
+      </section>
+    </article>
+
+    <article class="policy" id="panel-tr" role="tabpanel" aria-labelledby="tab-tr" lang="tr" hidden>
+      <section class="section">
+        <h2><span class="number">01</span>Giriş</h2>
+        <p>Bu Gizlilik Politikası, Emre Doğan tarafından geliştirilen ve yönetilen <strong>Kasa Keyboard</strong> için geçerlidir. Uygulamanın hangi bilgileri işlediğini, işlemenin nerede gerçekleştiğini ve size sunulan seçenekleri açıklar.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">02</span>Önce Gizlilik Yaklaşımı</h2>
+        <p>Kasa Keyboard, temel klavye işlevlerini cihazınızda gerçekleştirecek şekilde tasarlanmıştır. Uygulamada hesap sistemi, bulut eşitleme, analiz SDK’sı, telemetri SDK’sı, çökme raporlama SDK’sı, reklam SDK’sı, kullanıcı izleme SDK’sı veya uygulamanın oluşturduğu bir kullanıcı kimliği bulunmaz. Ağ erişimi aşağıda açıklanan GIF özelliği ve kullanıcı tarafından başlatılan harici işlemlerle sınırlıdır.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">03</span>Klavye Girdisi ve Yazılan Metin</h2>
+        <p>Kasa Keyboard normal klavye girdisini saklamaz veya iletmez. Yazdığınız karakterler, yazmakta olduğunuz uygulamaya ya da alana aktarılır.</p>
+        <p>İmleç hareketi, otomatik büyük harf ve e-posta veya alan adı önerileri gibi yerel işlevler için imlecin çevresindeki sınırlı metin geçici olarak cihazınızda işlenebilir. Bu metin yazım geçmişi olarak kaydedilmez ve Kasa Keyboard sunucularına veya üçüncü taraflara gönderilmez. Yerel yazım desteği parola içeren hassas alanlarda ve kişiselleştirilmiş öğrenme istemeyen alanlarda devre dışı bırakılır.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">04</span>Pano Geçmişi</h2>
+        <p>Pano geçmişi kullanılabilir durumdayken Kasa Keyboard, giriş yöntemi hizmeti etkin olduğu sürece Android panosuna kopyalanan metinleri görebilir. Pano geçmişi, Android Keystore destekli AES-GCM şifreleme kullanılarak yerel ve şifreli biçimde saklanır. Kasa Keyboard bu geçmişi karşıya yüklemez.</p>
+        <p>Pano öğeleri sabitlenebilir, silinebilir veya seçtiğiniz temizleme süresine göre otomatik kaldırılabilir. Sabitlenen öğeler otomatik temizleme ile kaldırılmaz. Hassas görünümlü öğeler görsel olarak maskelenip saklanabilir veya algılanan hassas öğelerin kaydedilmemesini seçebilirsiniz. Görsel maskeleme, kaydedilen asıl değerin kaldırıldığı anlamına gelmez.</p>
+        <p>Bir öğeyi yapıştırmayı seçtiğinizde metin, isteğiniz doğrultusunda etkin uygulamaya aktarılır.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">05</span>Secure Text Kasası</h2>
+        <p>Secure Text Kasası kayıtları yerel olarak saklanır ve Android Keystore destekli AES-GCM şifreleme kullanılarak şifrelenir. Kasa Keyboard bu kayıtları karşıya yüklemez.</p>
+        <p>Secure Text kayıtlarını ekleyebilir, düzenleyebilir, silebilir ve yapıştırabilirsiniz. Bir kaydı yapıştırmak, seçilen değeri etkin uygulamaya aktarır. Şifresi çözülen kayıtlar kasa açıkken geçici olarak bellekte tutulabilir; kasa kilitlendiğinde veya kapandığında, hizmet sona erdiğinde ya da bir değer yapıştırıldığında görünür klavye durumundan temizlenir.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">06</span>Yerel Ayarlar ve Tercihler</h2>
+        <p>Tema, dil, dokunsal geri bildirim, ses, klavye boyutu, yazım desteği, pano, ekran koruması ve benzeri tercihler uygulamanın özel depolama alanında yerel olarak saklanır. Kasa Keyboard bu ayarları GIPHY’ye veya bir Kasa Keyboard sunucusuna iletmez.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">07</span>GIF Arama ve İnternet Erişimi</h2>
+        <p>GIF özelliği GIPHY’yi kullanır. Bir GIF araması gönderdiğinizde <strong>GIF arama sorgunuz GIPHY’ye gönderilir</strong>. Trend istekleri, GIF önizlemeleri ve seçilen GIF’ler de GIPHY’den yüklenir. GIPHY, IP adresiniz ve istek üst verileri gibi olağan ağ bilgilerini kendi gizlilik uygulamaları kapsamında alabilir.</p>
+        <p>Kasa Keyboard normal klavye girdisini, pano geçmişini, Secure Text kayıtlarını veya uygulama ayarlarını GIPHY’ye göndermez. Özellikle GIF arama arayüzüne yazılan metin, normal hedef uygulama girdisi olarak değil GIF sorgusu olarak işlenir.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">08</span>GIF Arama Geçmişi, Favoriler ve Önbellek</h2>
+        <p>Son GIF arama terimleri ile favori GIF kimlikleri veya bağlantıları, bu özelliklerin kullanılabilmesi için yerel olarak saklanabilir. Son aramaları ve favorileri uygulamadan kaldırabilirsiniz.</p>
+        <p>GIF sonuçları geçici olarak bellekte veya uygulama önbelleğinde tutulabilir. Gönderilmek üzere seçilen GIF dosyaları fırsat buldukça yapılan önbellek temizliğine tabidir; Android veya görsel yükleme kütüphanesi de önbelleğe alınan dosyaları yönetebilir. Önbellek ömrü uygulama kullanımına ve sistem davranışına bağlı olabileceğinden Kasa Keyboard belirli bir dakikada kesin silme sözü vermez.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">09</span>Uygulamanın Kullandığı İzinler</h2>
+        <ul>
+          <li><strong>INTERNET:</strong> GIPHY araması, trend GIF’ler, önizleme yükleme ve seçilen GIF’i indirmek için kullanılır.</li>
+          <li><strong>VIBRATE:</strong> Tuş basışları ve ayar önizlemeleri için isteğe bağlı dokunsal geri bildirim sağlamak amacıyla kullanılır.</li>
+          <li><strong>Giriş yöntemi hizmeti erişimi:</strong> Android, klavyenin etkin alana metin girebilmesi için sistem tarafından korunan giriş yöntemi hizmeti üzerinden Kasa Keyboard’a bağlanır.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">10</span>İsteğe Bağlı Cihaz Kimlik Doğrulaması</h2>
+        <p>Secure Text için cihaz kimlik doğrulaması isteğe bağlıdır. Etkinleştirirseniz Kasa Keyboard, Android cihaz kimlik doğrulamasını ve kimlik doğrulamasına bağlı bir Android Keystore anahtarını kullanır. Başarılı kilit açma işlemi yaklaşık 120 saniyelik sınırlı bir oturum boyunca geçerlidir. Bu seçeneği etkinleştirmezseniz Secure Text şifreli kalır ancak her açılışta cihaz kimlik doğrulaması gerektirmez.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">11</span>Ekran Yakalama Koruması</h2>
+        <p>Kasa Keyboard, Android’in güvenli pencere korumasını kullanarak uygulama ve klavye pencerelerini varsayılan olarak ekran görüntüsüne ve ekran kaydına karşı korur. Seçtiğiniz süre boyunca ekran yakalamaya geçici olarak izin verebilirsiniz. Geçici süre sona erdiğinde ekran yakalama yeniden korunur.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">12</span>Veri Paylaşımı ve Üçüncü Taraflar</h2>
+        <p>Kasa Keyboard kişisel verileri satmaz; analiz, telemetri, reklam, çökme raporlama veya kullanıcı izleme SDK’ları içermez.</p>
+        <p>GIPHY, GIF içeriğini yüklemek için gereken GIF arama sorgularını ve istekleri alır. Etkin uygulama; karakterleri, pano öğelerini, Secure Text değerlerini veya GIF’leri yalnızca siz yazmayı, yapıştırmayı ya da göndermeyi seçtiğinizde alır. İçerik başka bir uygulamaya aktarıldıktan sonra o uygulamanın gizlilik uygulamaları geçerlidir.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">13</span>Harici Bağlantılar ve Kullanıcı Tarafından Başlatılan İşlemler</h2>
+        <p>Geri bildirim e-postası ve Play Store işlemleri yalnızca ilgili işlemi seçmenizden sonra harici bir e-posta uygulamasını, hizmeti, tarayıcıyı veya Google Play’i açar. Bu harici hizmetler bilgileri kendi politikalarına göre işleyebilir. Kasa Keyboard klavye içeriğinizi bu işlemler üzerinden otomatik olarak göndermez; ne göndereceğinize siz karar verirsiniz.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">14</span>Yedeklemeler ve Cihaz Aktarımı</h2>
+        <p>Kasa Keyboard, Android uygulama yedeklemesini devre dışı bırakır ve uygulama tercihleriyle uygulamaya ait dosyaları bulut yedekleme ve cihaz aktarımının dışında tutar. Uygulama bulut eşitleme veya hesaba bağlı geri yükleme hizmeti sunmaz.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">15</span>Veri Saklama ve Silme</h2>
+        <p>Yerel ayarlar değiştirilene veya uygulama verileri kaldırılana kadar saklanır. Pano öğeleri silinene, otomatik temizlenene veya uygulama verileri kaldırılana kadar saklanır; sabitlenen öğeler siz sabitlemeyi kaldırana veya silene kadar kalır. Secure Text kayıtları siz silene veya uygulama verilerini kaldırana kadar saklanır. GIF arama geçmişi ve favoriler kaldırılana veya uygulama verileri silinene kadar saklanır.</p>
+        <p>Kasa Keyboard uygulama verilerini temizlemek veya uygulamayı kaldırmak, uygulamaya ait yerel verileri siler. Daha önce başka bir uygulamaya yapıştırılan, yazılan, e-postayla gönderilen veya aktarılan bilgiler alıcı uygulamanın ya da hizmetin kontrolündedir.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">16</span>Kullanıcı Denetimi</h2>
+        <p>Uygulama ayarlarından pano temizliğini yönetebilir; pano öğelerini sabitleyebilir veya silebilir; algılanan hassas pano öğelerini kaydetmemeyi seçebilir; GIF aramalarını ve favorileri kaldırabilir; Secure Text kayıtları ekleyebilir veya silebilir; Secure Text cihaz kimlik doğrulamasını açıp kapatabilir; yazım desteğini değiştirebilir; dokunsal geri bildirimi ve geçici ekran yakalama erişimini yönetebilirsiniz.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">17</span>Bu Politikadaki Değişiklikler</h2>
+        <p>Bu politika, Kasa Keyboard özellikleri, yasal gereklilikler veya üçüncü taraf hizmetleri değiştiğinde güncellenebilir. Güncellenmiş bir politika yayımlandığında bu sayfanın üst kısmındaki yürürlük tarihi de güncellenir.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">18</span>İletişim</h2>
+        <p>Kasa Keyboard ile ilgili gizlilik soruları veya talepleri için Emre Doğan’a <a href="mailto:kasa.passvault@gmail.com">kasa.passvault@gmail.com</a> adresinden ulaşabilirsiniz.</p>
+      </section>
+    </article>
+
+    <article class="policy" id="panel-de" role="tabpanel" aria-labelledby="tab-de" lang="de" hidden>
+      <section class="section">
+        <h2><span class="number">01</span>Einleitung</h2>
+        <p>Diese Datenschutzerklärung gilt für <strong>Kasa Keyboard</strong>, entwickelt und verantwortet von Emre Doğan. Sie erläutert, welche Informationen die App verarbeitet, wo diese Verarbeitung stattfindet und welche Wahlmöglichkeiten Ihnen zur Verfügung stehen.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">02</span>Datenschutzorientierter Ansatz</h2>
+        <p>Kasa Keyboard ist so konzipiert, dass die wesentlichen Tastaturfunktionen auf Ihrem Gerät ausgeführt werden. Die App verfügt über kein Kontosystem, keine Cloud-Synchronisierung, kein Analyse-SDK, kein Telemetrie-SDK, kein Absturzbericht-SDK, kein Werbe-SDK, kein Nutzerverfolgungs-SDK und keine von der App erzeugte Nutzerkennung. Der Netzwerkzugriff beschränkt sich auf die unten beschriebene GIF-Funktion und von Ihnen ausgelöste externe Aktionen.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">03</span>Tastatureingaben und eingegebener Text</h2>
+        <p>Kasa Keyboard speichert oder übermittelt normale Tastatureingaben nicht. Eingegebene Zeichen werden an die App oder das Feld übergeben, in dem Sie gerade schreiben.</p>
+        <p>Ein begrenzter Textbereich um den Cursor kann vorübergehend auf Ihrem Gerät verarbeitet werden, um lokale Funktionen wie Cursorbewegung, Großschreibung sowie E-Mail- oder Domainvorschläge bereitzustellen. Dieser Text wird nicht als Eingabeverlauf gespeichert und nicht an Server von Kasa Keyboard oder an Dritte gesendet. Die lokale Eingabeunterstützung ist in passwortsensiblen Feldern und in Feldern, die kein personalisiertes Lernen anfordern, deaktiviert.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">04</span>Zwischenablageverlauf</h2>
+        <p>Wenn der Zwischenablageverlauf verfügbar ist, kann Kasa Keyboard Text erkennen, der während der Aktivität des Eingabedienstes in die Android-Zwischenablage kopiert wird. Der Verlauf wird lokal und verschlüsselt mit Android-Keystore-gestützter AES-GCM-Verschlüsselung gespeichert. Kasa Keyboard lädt ihn nicht hoch.</p>
+        <p>Einträge können angeheftet, gelöscht oder nach dem von Ihnen gewählten Zeitraum automatisch entfernt werden. Angeheftete Einträge werden nicht automatisch bereinigt. Als sensibel erkannte Einträge können visuell maskiert und gespeichert werden; alternativ können Sie die Speicherung erkannter sensibler Einträge überspringen. Eine visuelle Maskierung bedeutet nicht, dass der zugrunde liegende gespeicherte Wert entfernt wurde.</p>
+        <p>Wenn Sie einen Eintrag einfügen, wird dessen Text auf Ihre Anforderung an die aktive App übergeben.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">05</span>Secure Text Vault</h2>
+        <p>Einträge im Secure Text Vault werden lokal gespeichert und mit Android-Keystore-gestützter AES-GCM-Verschlüsselung verschlüsselt. Kasa Keyboard lädt diese Einträge nicht hoch.</p>
+        <p>Sie können Secure-Text-Einträge hinzufügen, bearbeiten, löschen und einfügen. Beim Einfügen wird der ausgewählte Wert an die aktive App übergeben. Entschlüsselte Einträge können vorübergehend im Arbeitsspeicher gehalten werden, solange der Tresor geöffnet ist. Sie werden aus dem sichtbaren Tastaturzustand entfernt, wenn der Tresor gesperrt oder geschlossen, der Dienst beendet oder ein Wert eingefügt wird.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">06</span>Lokale Einstellungen und Präferenzen</h2>
+        <p>Design-, Sprach-, Haptik-, Ton-, Tastaturgrößen-, Eingabehilfe-, Zwischenablage-, Bildschirmschutz- und ähnliche Einstellungen werden lokal im privaten Speicher der App gespeichert. Kasa Keyboard übermittelt diese Einstellungen weder an GIPHY noch an einen Server von Kasa Keyboard.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">07</span>GIF-Suche und Internetzugriff</h2>
+        <p>Die GIF-Funktion verwendet GIPHY. Wenn Sie eine GIF-Suche absenden, <strong>wird Ihre GIF-Suchanfrage an GIPHY übermittelt</strong>. Trendanfragen, GIF-Vorschauen und ausgewählte GIFs werden ebenfalls von GIPHY geladen. GIPHY kann übliche Netzwerkdaten wie Ihre IP-Adresse und Anfragemetadaten im Rahmen seiner eigenen Datenschutzpraktiken erhalten.</p>
+        <p>Kasa Keyboard sendet normale Tastatureingaben, den Zwischenablageverlauf, Secure-Text-Einträge oder App-Einstellungen nicht an GIPHY. Text, den Sie gezielt in die GIF-Suchoberfläche eingeben, wird als GIF-Suchanfrage und nicht als normale Eingabe für die aktive App behandelt.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">08</span>GIF-Suchverlauf, Favoriten und Zwischenspeicherung</h2>
+        <p>Letzte GIF-Suchbegriffe sowie Kennungen oder URLs favorisierter GIFs können lokal gespeichert werden, damit diese Funktionen verfügbar bleiben. Sie können letzte Suchanfragen und Favoriten in der App entfernen.</p>
+        <p>GIF-Ergebnisse können vorübergehend im Arbeitsspeicher oder im App-Cache gespeichert werden. Zum Senden ausgewählte GIF-Dateien unterliegen einer gelegentlichen Cache-Bereinigung; Android oder die Bildladebibliothek können zwischengespeicherte Dateien ebenfalls verwalten. Kasa Keyboard verspricht keine Löschung zu einer exakten Minute, da die Cache-Dauer von der App-Nutzung und dem Systemverhalten abhängen kann.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">09</span>Von der App verwendete Berechtigungen</h2>
+        <ul>
+          <li><strong>INTERNET:</strong> für GIPHY-Suchen, Trend-GIFs, das Laden von Vorschauen und den Download ausgewählter GIFs.</li>
+          <li><strong>VIBRATE:</strong> für optionales haptisches Feedback bei Tastendrücken und Einstellungsvorschauen.</li>
+          <li><strong>Zugriff als Eingabemethodendienst:</strong> Android verbindet sich über den systemgeschützten Eingabemethodendienst mit Kasa Keyboard, damit die Tastatur Text in das aktive Feld eingeben kann.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">10</span>Optionale Geräteauthentifizierung</h2>
+        <p>Die Geräteauthentifizierung für Secure Text ist optional. Wenn Sie sie aktivieren, verwendet Kasa Keyboard die Android-Geräteauthentifizierung und einen authentifizierungsgebundenen Android-Keystore-Schlüssel. Eine erfolgreiche Entsperrung bleibt für eine begrenzte Sitzung von ungefähr 120 Sekunden gültig. Wenn Sie diese Option nicht aktivieren, bleibt Secure Text verschlüsselt, erfordert aber nicht bei jedem Öffnen eine Geräteauthentifizierung.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">11</span>Schutz vor Bildschirmaufnahmen</h2>
+        <p>Kasa Keyboard schützt seine App- und Tastaturfenster standardmäßig mithilfe des sicheren Android-Fensterschutzes vor Screenshots und Bildschirmaufzeichnungen. Sie können Bildschirmaufnahmen für einen ausgewählten Zeitraum vorübergehend erlauben. Nach Ablauf dieses Zeitraums wird der Schutz erneut aktiviert.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">12</span>Datenweitergabe und Dritte</h2>
+        <p>Kasa Keyboard verkauft keine personenbezogenen Daten und enthält keine Analyse-, Telemetrie-, Werbe-, Absturzberichts- oder Nutzerverfolgungs-SDKs.</p>
+        <p>GIPHY erhält GIF-Suchanfragen und die zum Laden von GIF-Inhalten erforderlichen Anfragen. Die aktive App erhält Zeichen, Zwischenablageeinträge, Secure-Text-Werte oder GIFs nur, wenn Sie deren Eingabe, Einfügen oder Senden auswählen. Sobald Inhalte an eine andere App übergeben wurden, gelten die Datenschutzpraktiken dieser App.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">13</span>Externe Links und nutzerinitiierte Aktionen</h2>
+        <p>Feedback-E-Mail- und Play-Store-Aktionen öffnen erst nach Ihrer Auswahl eine externe E-Mail-App, einen Dienst, einen Browser oder Google Play. Diese externen Dienste können Informationen gemäß ihren eigenen Richtlinien verarbeiten. Kasa Keyboard sendet Ihre Tastaturinhalte über diese Aktionen nicht automatisch; Sie entscheiden, was Sie übermitteln.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">14</span>Sicherungen und Geräteübertragung</h2>
+        <p>Kasa Keyboard deaktiviert die Android-App-Sicherung und schließt App-Einstellungen sowie app-eigene Dateien von Cloud-Sicherung und Geräteübertragung aus. Die App bietet keine Cloud-Synchronisierung und keinen kontobasierten Wiederherstellungsdienst.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">15</span>Datenspeicherung und Löschung</h2>
+        <p>Lokale Einstellungen bleiben gespeichert, bis sie geändert oder die App-Daten entfernt werden. Zwischenablageeinträge bleiben gespeichert, bis sie gelöscht, automatisch bereinigt oder die App-Daten entfernt werden; angeheftete Einträge bleiben bis zum manuellen Lösen oder Löschen erhalten. Secure-Text-Einträge bleiben gespeichert, bis Sie sie löschen oder die App-Daten entfernen. GIF-Suchverlauf und Favoriten bleiben gespeichert, bis sie entfernt oder die App-Daten gelöscht werden.</p>
+        <p>Das Löschen der App-Daten von Kasa Keyboard oder die Deinstallation entfernt die lokalen, app-eigenen Daten. Informationen, die bereits in eine andere App eingefügt, eingegeben, per E-Mail verschickt oder anderweitig übertragen wurden, unterliegen der Kontrolle der empfangenden App oder des Dienstes.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">16</span>Ihre Kontrolle</h2>
+        <p>In den App-Einstellungen können Sie die Bereinigung der Zwischenablage verwalten, Zwischenablageeinträge anheften oder löschen, die Speicherung erkannter sensibler Einträge überspringen, GIF-Suchen und Favoriten entfernen, Secure-Text-Einträge hinzufügen oder löschen, die Geräteauthentifizierung für Secure Text aktivieren oder deaktivieren, Eingabehilfen ändern, haptisches Feedback steuern und den vorübergehenden Zugriff für Bildschirmaufnahmen verwalten.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">17</span>Änderungen dieser Erklärung</h2>
+        <p>Diese Erklärung kann aktualisiert werden, wenn sich Funktionen von Kasa Keyboard, rechtliche Anforderungen oder Dienste Dritter ändern. Das oben auf dieser Seite angegebene Wirksamkeitsdatum wird aktualisiert, wenn eine überarbeitete Erklärung veröffentlicht wird.</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="number">18</span>Kontakt</h2>
+        <p>Bei Datenschutzfragen oder Anliegen zu Kasa Keyboard kontaktieren Sie Emre Doğan unter <a href="mailto:kasa.passvault@gmail.com">kasa.passvault@gmail.com</a>.</p>
+      </section>
+    </article>
+
+    <footer>
+      Kasa Keyboard · Privacy Policy · June 2026
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      const supportedLanguages = ["en", "tr", "de"];
+      const tabs = Array.from(document.querySelectorAll("[data-language]"));
+      const panels = supportedLanguages.map((code) => document.getElementById(`panel-${code}`));
+
+      function activateLanguage(code, updateUrl = true) {
+        const language = supportedLanguages.includes(code) ? code : "en";
+
+        tabs.forEach((tab) => {
+          const isActive = tab.dataset.language === language;
+          tab.setAttribute("aria-selected", String(isActive));
+          tab.tabIndex = isActive ? 0 : -1;
+        });
+
+        panels.forEach((panel) => {
+          panel.hidden = panel.id !== `panel-${language}`;
+        });
+
+        document.documentElement.lang = language;
+
+        if (updateUrl) {
+          history.replaceState(null, "", `#${language}`);
+        }
+      }
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => activateLanguage(tab.dataset.language));
+        tab.addEventListener("keydown", (event) => {
+          if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+          event.preventDefault();
+          const direction = event.key === "ArrowRight" ? 1 : -1;
+          const next = (index + direction + tabs.length) % tabs.length;
+          tabs[next].focus();
+          activateLanguage(tabs[next].dataset.language);
+        });
+      });
+
+      window.addEventListener("hashchange", () => {
+        activateLanguage(location.hash.slice(1), false);
+      });
+
+      activateLanguage(location.hash.slice(1), false);
+    })();
+  </script>
+</body>
+</html>
